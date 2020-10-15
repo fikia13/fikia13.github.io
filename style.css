@@ -4,3 +4,11 @@ body{
 header{
     background: linear-gradient(266.19deg, #21F2FF 8.49%, #30D8C4 86.65%);
 }
+
+header h1{
+	color: white;
+}
+
+header h1 span{
+	color: blue;
+}
