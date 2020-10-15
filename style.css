@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 body{
     background-color : #F0F8FF;
+    font-family: 'Montserrat';
 }
 header{
     background: linear-gradient(266.19deg, #21F2FF 8.49%, #30D8C4 86.65%);
