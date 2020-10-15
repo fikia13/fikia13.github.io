@@ -4,13 +4,19 @@ body{
     font-family: 'Montserrat';
 }
 header{
-    background: linear-gradient(266.19deg, #21F2FF 8.49%, #30D8C4 86.65%);
+    background: rgb(0,99,255);
+    background: linear-gradient(90deg, rgba(0,99,255,1) 0%, rgba(44,255,192,1) 100%);
 }
-
+nav a{
+    text-decoration: none;
+}
+nav li{
+    display: inline;
+}
 header h1{
 	color: white;
 }
 
 header h1 span{
-	color: blue;
+	color: #00ffeb;
 }
