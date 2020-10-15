@@ -1,7 +1,6 @@
+body{
+    background-color : #F0F8FF;
+}
 header{
-    position: absolute;
-    left: 4.25px;
-    top: -0.5px;
-
     background: linear-gradient(266.19deg, #21F2FF 8.49%, #30D8C4 86.65%);
 }
