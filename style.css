@@ -4,14 +4,22 @@ body{
     font-family: 'Montserrat';
 }
 header{
-    background: rgb(0,99,255);
-    background: linear-gradient(90deg, rgba(0,99,255,1) 0%, rgba(44,255,192,1) 100%);
+    background: rgb(0,159,255);
+    background: linear-gradient(90deg, rgba(0,159,255,1) 0%, rgba(0,255,235,1) 100%);
 }
+header h1{
+    padding: 10px;
+}
+
 nav a{
     text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
 }
 nav li{
     display: inline;
+    margin-right: 20px;
 }
 header h1{
 	color: white;
@@ -19,4 +27,8 @@ header h1{
 
 header h1 span{
 	color: #00ffeb;
+}
+footer{
+    background: rgb(0,159,255);
+    background: linear-gradient(90deg, rgba(0,255,235,1) 0%, rgba(0,159,255,1) 100%);
 }
