@@ -17,6 +17,10 @@ body{
 	justify-content: center;
 }
 header{
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 7px 10%;
     background: rgb(0,159,255);
     background: linear-gradient(90deg, rgba(0,159,255,1) 0%, rgba(0,255,235,1) 100%);
 }
