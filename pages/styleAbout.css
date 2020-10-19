@@ -24,6 +24,7 @@ li,a{
 	font-weight: bold;
 }
 
+/*---Bagian Header ---*/
 header{
 	display: flex;
 	justify-content: space-between;
@@ -75,44 +76,108 @@ header h1 span{
 	background-color: white;
 	color: skyblue;
 }
+/*---Bagian Header ---*/
 
+/*---Bagian Konten About ---*/
 #konten .konten{
 	display: flex;
 	width: 80%;
-	height: 300px;
 	background-color: transparent;
 	margin: 0 auto;
 	border-radius: 20px;
 	flex:1;
 }
 
-
 #konten .contact{
 	margin-top: 30px;
 }
 
-.konten h2{
+.about{
+	box-shadow: 0 0 20px 0 #999;
+	padding: 20px;
+}
+
+.about h2{
 	text-align: center;
 	font-size: 36px;
 }
 
-.konten p{
-	text-align: center;
+.about p{
+	text-align: left;
 	font-size: 20px;
 	justify-content: center;
 	flex-wrap: wrap;
 	overflow-wrap: hidden;
 }
+/*---Bagian Konten About ---*/
 
+/*---Bagian Konten Formulir ---*/
 
+.contact{
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 0 20px 0 #999;
+	padding: 20px;
+}
+.contact h2{
+	text-align: center;
+	font-size: 36px;
+}
 
+form{
+	margin:0px;
+}
+
+.inputan-formulir{
+	display: flex;
+	margin: 20px 0;
+	height: 40px;
+	width: 400px;
+	padding:0 20px;
+	border: 1px solid black;
+	border-radius: 20px;
+	outline: none;
+}
+
+.inputan-pesan{
+	padding: 10px 20px;
+	display: flex;
+	height: 150px;
+	width: 100%;
+	outline: none;
+	
+	border: 1px solid black;
+}
+
+.tombol-kirim{
+	display: flex;
+	margin: 20px auto;
+	padding: 6px 15px;
+	border-radius: 20px;
+	outline: none;
+	background-color: green;
+	color: white;
+}
+/*---Bagian Konten Formulir ---*/
+
+/*---Bagian Footer---*/
 footer{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+
 	padding: 7px 10%;
 	margin-top: 30px;
 	background: rgb(57,225,194);
 	background: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
 }
 
+footer h1{
+	margin: 0 auto;
+	font-size: 40px;
+	color: #02fbfe;
+	cursor: pointer;
+	margin-right: auto;
+}
+footer h1 span{
+	color: white;
+}
+/*---Bagian Footer---*/
