@@ -21,8 +21,8 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	padding: 7px 10%;
-    background: rgb(0,159,255);
-    background: linear-gradient(90deg, rgba(0,159,255,1) 0%, rgba(0,255,235,1) 100%);
+	background: rgb(76,140,231);
+	background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
 }
 header h1{
     padding: 10px;
@@ -46,6 +46,6 @@ header h1 span{
 	color: #00ffeb;
 }
 footer{
-    background: rgb(0,159,255);
-    background: linear-gradient(90deg, rgba(0,255,235,1) 0%, rgba(0,159,255,1) 100%);
+	background: rgb(57,225,194);
+	background: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
 }
