@@ -26,9 +26,12 @@ nav{
 	border: 1px solid black;
     display: flex;
 	justify-content: space-between;
-	padding: 20px 10%;
+	height: 65px;
 	background: rgb(76,140,231);
 	background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
+	align-items: center;
+	padding: 0 120px;
+	
 }
 
 .logo{
@@ -39,8 +42,12 @@ nav ul a{
     font-weight: 500;
 	color: white;
 	text-decoration: none;
+	transition: all 0.3s ease 0s;
 }
 
+nav ul a:hover{
+	color: blue;
+}
 nav ul{
 	display: flex;
 	list-style: none;
@@ -56,6 +63,7 @@ nav ul{
 .logo h1 span{
 	color: #00ffeb;
 }
+
 /* ----Akhir dari Nav ---*/
 
 /* Main */
