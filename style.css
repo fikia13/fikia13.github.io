@@ -5,14 +5,22 @@
     padding: 0;
 }
 
-body{
+/*body{
     background-color : #F0F8FF;
     font-family: 'Montserrat';
     display: flex;
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
+}*/
+
+body{
+	background-color:#F0F8FF;
+	font-family: 'Montserrat';
 }
+
+
+
 /* nav */
 nav{
 	border: 1px solid black;
@@ -48,8 +56,17 @@ nav ul{
 .logo h1 span{
 	color: #00ffeb;
 }
+/* ----Akhir dari Nav ---*/
 
-/* ----end of navr ---*/
+/* Main */
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+/*Akhir Main*/
+
+
 #content-1{
 	margin: 30px;
 	display: flex;
