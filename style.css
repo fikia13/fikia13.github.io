@@ -83,6 +83,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	margin-bottom: 30px;
 }
 #content-2 img{
 	width: 120px;
@@ -95,4 +96,14 @@ footer{
 	border-radius: 10px;
 	width: 250px;
 
+}
+footer h1{
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
+footer h1 span{
+	color: #00ffeb;
 }
