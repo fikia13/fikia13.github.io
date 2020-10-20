@@ -23,7 +23,6 @@ body{
 
 /* nav */
 nav{
-	border: 1px solid black;
     display: flex;
 	justify-content: space-between;
 	height: 65px;
@@ -34,9 +33,7 @@ nav{
 	
 }
 
-.logo{
-	border: 1px solid black;
-}
+
 nav ul a{
     font-size: 18px;
     font-weight: 500;
@@ -46,14 +43,13 @@ nav ul a{
 }
 
 nav ul a:hover{
-	color: blue;
+	color: rgb(0, 110, 255);
 }
 nav ul{
 	display: flex;
 	list-style: none;
 	width: 15%;
 	justify-content: space-between;
-	border: 2px solid black;
 	
 }
 .logo h1{
@@ -63,7 +59,16 @@ nav ul{
 .logo h1 span{
 	color: #00ffeb;
 }
+.tombol{
+	background-color: rgb(0, 175, 102);
+	padding: 5px 10px;
+	border-radius: 10px;
+}
 
+.tombol:hover{
+	background-color: white;
+	color: #00ffeb;
+}
 /* ----Akhir dari Nav ---*/
 
 /* Main */
