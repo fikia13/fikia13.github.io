@@ -15,6 +15,7 @@ body{
 }
 /* nav */
 nav{
+	border: 1px solid black;
     display: flex;
 	justify-content: space-between;
 	padding: 20px 10%;
@@ -22,26 +23,33 @@ nav{
 	background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
 }
 
-
-nav a{
-    text-decoration: none;
+.logo{
+	border: 1px solid black;
+}
+nav ul a{
     font-size: 18px;
     font-weight: 500;
-    color: white;
+	color: white;
+	text-decoration: none;
 }
-nav li{
-    display: inline;
-    margin-right: 20px;
+
+nav ul{
+	display: flex;
+	list-style: none;
+	width: 15%;
+	justify-content: space-between;
+	border: 2px solid black;
+	
 }
-.logo h2{
+.logo h1{
 	color: white;
 }
 
-.logo h2 span{
+.logo h1 span{
 	color: #00ffeb;
 }
 
-/* ----end of header ---*/
+/* ----end of navr ---*/
 #content-1{
 	margin: 30px;
 	display: flex;
