@@ -4,9 +4,6 @@
 	margin:0;
     padding: 0;
 }
-html{
-	height: 100%
-}
 
 body{
     background-color : #F0F8FF;
@@ -16,18 +13,15 @@ body{
 	align-content: center;
 	justify-content: center;
 }
-/* header */
-header{
+/* nav */
+nav{
     display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 7px 10%;
+	padding: 20px 10%;
 	background: rgb(76,140,231);
 	background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
 }
-header h1{
-    padding: 10px;
-}
+
 
 nav a{
     text-decoration: none;
@@ -39,11 +33,11 @@ nav li{
     display: inline;
     margin-right: 20px;
 }
-header h1{
+.logo h2{
 	color: white;
 }
 
-header h1 span{
+.logo h2 span{
 	color: #00ffeb;
 }
 
