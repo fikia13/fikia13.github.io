@@ -216,6 +216,14 @@ footer{
 	text-align: center;
 	padding: 1.3rem;
 }
+
+footer h2{
+	color: white;
+}
+
+footer span{
+	color: var(--warnaUbi);
+}
 /* -- Footer --*/
 
 
