@@ -56,6 +56,7 @@ table {
 	--fontDasar: Montserrat,sans-serif;
 
 	/*Variabel Warna*/
+	--warnaUbi: #00ffeb;
 	--warnaDasar: #F0F8FF;
 	--warnaNav: rgb(76,140,231);
 	--warnaNav: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
