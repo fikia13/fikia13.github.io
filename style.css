@@ -73,9 +73,9 @@ main{
 
 /*konten 0*/
 .container-0{
-	background-image: url(assets/cofeeHompageFix.webp);
+	background-image: url(assets/cofeeHompage.jpg);
 	background-size: cover;
-	background-position: center center;
+	background-position: center;
 	height: 400px;
 	display: flex;
 }
