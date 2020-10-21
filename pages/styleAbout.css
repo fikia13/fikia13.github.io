@@ -1,183 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-*{
-	box-sizing: border-box;
-	margin:0;
+/*CSS Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
 	padding: 0;
-	font-family: Montserrat,sans-serif;
+	border: 0;
+	font-size: 100%;
+
+	vertical-align: baseline;
 }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root{
+	/*Variabel Font*/
+	--fontDasar: Montserrat,sans-serif;
+
+	/*Variabel Warna*/
+	--warnaDasar: #F0F8FF;
+	--warnaNav: rgb(76,140,231);
+	--warnaNav: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
+	--tombolHijau : rgb(0, 175, 102);
+	--warnaGelap: rgb(34, 34, 34);
+	--warnaFooter: rgb(57,225,194);
+	--warnaFooter: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
+	--bayangan : 0 1px 5px rgba(104,104,104,0.8);
+}
+
+/*-- Settingan Dasar --*/
 html{
-	height: 100%
+	box-sizing: border-box;
+	font-family: var(--fontDasar);
+	color: var(--warnaGelap);
 }
 
 body{
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	background-color: #f0f4f6;
-}
-
-li,a{
-	font-size: 18px;
-	color: white;
-	text-decoration: none;
-	font-weight: 500;
-}
-
-/*---Bagian Header ---*/
-header{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 7px 10%;
-	background: rgb(76,140,231);
-	background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
-	margin-bottom: 30px;
-}
-
-header h1{
-	font-size: 40px;
-	color: #02fbfe;
-	cursor: pointer;
-	margin-right: auto;
-}
-
-header h1 span{
-	color: white;
-}
-
-.linkNav{
-	list-style: none;
-}
-.linkNav li{
-	display: inline-block;
-	padding: 0 20px;
-}
-.linkNav li a{
-	transition: all 0.3s ease 0s;
-}
-
-.linkNav li a:hover{
-	border-bottom: 3px solid white;
+	background-color: var(--warnaDasar);
 }
 
 .tombol{
-	padding: 9px 25px;
-	background-color: transparent;
-	border: 2px solid white;
+	background-color: var(--tombolHijau);
 	color: white;
-	border-radius: 20px;
-	cursor: pointer;
-	transition: all 0.3s ease 0s;
-	margin-left: 20px;
+	text-decoration: none;
+	padding: 0.6rem 1.3rem;
+	border:0;
 }
 
-.tombol:hover{
-	background-color: white;
-	color: skyblue;
+.pembungkus{
+	display: grid;
+	grid-gap: 20px;
 }
-/*---Bagian Header ---*/
+/*-- Settingan Dasar --*/
 
-/*---Bagian Konten About ---*/
-#konten .konten{
-	display: flex;
+/* -- Navigasi --*/
+header{
+	background:var(--warnaNav);
+}
+.navigasi{
 	width: 80%;
-	background-color: transparent;
-	margin: 0 auto;
-	border-radius: 20px;
-	flex:1;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	align-items: center;
+	padding: 1.2rem;
+}
+.navigasi ul{
+	display: grid;
+	grid-gap: 0px;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(3,1fr);
 }
 
-#konten .contact{
-	margin-top: 30px;
-}
-
-.about{
-	box-shadow: 0 0 20px 0 #999;
-	padding: 20px;
-}
-
-.about h2{
+.navigasi li a{
+	display: inline-block;
+	padding: 0.3rem;
+	text-decoration: none;
 	text-align: center;
-	font-size: 36px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.1rem;
 }
 
-.about p{
-	text-align: left;
-	font-size: 20px;
-	justify-content: center;
-	flex-wrap: wrap;
-	overflow-wrap: hidden;
+.navigasi li a:hover{;
+	border-bottom: 1px solid white;
 }
-/*---Bagian Konten About ---*/
+/* -- Navigasi -- */
 
-/*---Bagian Konten Formulir ---*/
 
-.contact{
+/* -- Konten -- */
+.konten{
+	display: grid;
+	grid-row-gap: 20px;
+	grid-template-rows: auto 1fr;
+	font-size: 1.3rem;
+
+}
+
+.atas,.bawah{
 	display: flex;
-	justify-content: center;
-	box-shadow: 0 0 20px 0 #999;
+	flex-direction: column;
+
+	background-color: white;
+	align-items:  center;
+	width: 80%;
+	margin:0 auto;
 	padding: 20px;
+	border-radius: 20px;
+	box-shadow: var(--bayangan);
 }
-.contact h2{
-	text-align: center;
-	font-size: 36px;
+.atas h2,.bawah h2{
+	font-size: 2.5rem;
 }
 
 form{
-	margin:0px;
+	margin:0 auto;
+
 }
 
 .inputan-formulir{
 	display: flex;
 	margin: 20px 0;
 	height: 40px;
-	width: 400px;
+	width: 300px;
 	padding:0 20px;
 	border: 1px solid black;
 	border-radius: 20px;
 	outline: none;
+	font-size: 1.1rem;
 }
 
 .inputan-pesan{
 	padding: 10px 20px;
 	display: flex;
 	height: 150px;
-	width: 100%;
+	width: 300px;
 	outline: none;
-	
 	border: 1px solid black;
-}
-
-.tombol-kirim{
-	display: flex;
 	margin: 20px auto;
-	padding: 6px 15px;
-	border-radius: 20px;
-	outline: none;
-	background-color: green;
-	color: white;
+	font-size: 1.1rem;
 }
-/*---Bagian Konten Formulir ---*/
+/* -- Konten -- */
 
-/*---Bagian Footer---*/
-footer{
-	display: flex;
-
-	padding: 7px 10%;
-	margin-top: 30px;
-	background: rgb(57,225,194);
-	background: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
-}
-
-footer h1{
+/* -- Sosmed --*/
+.sosmed{
+	display: grid;
+	width: 80%;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
 	margin: 0 auto;
-	font-size: 40px;
-	color: #02fbfe;
-	cursor: pointer;
-	margin-right: auto;
 }
-footer h1 span{
-	color: white;
+
+.sosmed .box{
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	text-align: center;
+	padding: 1.5rem 2rem;
+	box-shadow: var(--bayangan);
 }
-/*---Bagian Footer---*/
+/* -- Sosmed --*/
+
+/* -- Footer --*/
+footer{
+	background: var(--warnaFooter);
+	text-align: center;
+	padding: 1.3rem;
+}
+/* -- Footer --*/
+
+
