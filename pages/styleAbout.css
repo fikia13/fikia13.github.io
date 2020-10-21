@@ -204,7 +204,7 @@ form{
 }
 
 .bawah a:hover{
-	background-color: white;
+	background-color: var(--warnaDasar);
 	color: var(--tombolHijau);
 }
 /* -- Konten -- */
