@@ -125,6 +125,15 @@ header{
 .navigasi li a:hover{;
 	border-bottom: 1px solid white;
 }
+
+.namaCafe h1{
+	font-size: 1.8rem;
+	color: white;
+}
+
+.namaCafe span{
+	color: var(--warnaUbi);
+}
 /* -- Navigasi -- */
 
 
