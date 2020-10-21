@@ -110,6 +110,7 @@ header{
 	padding: 0;
 	list-style: none;
 	grid-template-columns: repeat(3,1fr);
+	align-items: center;
 }
 
 .navigasi li a{
@@ -123,7 +124,7 @@ header{
 }
 
 .navigasi li a:hover{;
-	border-bottom: 1px solid white;
+	color: var(--tombolHijau);
 }
 
 .namaCafe h1{
@@ -133,6 +134,14 @@ header{
 
 .namaCafe span{
 	color: var(--warnaUbi);
+}
+.navigasi .tombol{
+	padding: 10px 14px;
+	border-radius: 20px;
+}
+.navigasi .tombol:hover{
+	color: var(--tombolHijau);
+	background-color: white;
 }
 /* -- Navigasi -- */
 
@@ -189,6 +198,15 @@ form{
 	margin: 20px auto;
 	font-size: 1.1rem;
 }
+
+.bawah a{
+	border-radius: 20px;
+}
+
+.bawah a:hover{
+	background-color: white;
+	color: var(--tombolHijau);
+}
 /* -- Konten -- */
 
 /* -- Sosmed --*/
@@ -197,7 +215,7 @@ form{
 	width: 80%;
 	grid-gap: 20px;
 	grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 .sosmed .box{
