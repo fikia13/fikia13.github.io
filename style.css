@@ -53,8 +53,8 @@ nav ul{
 }
 .tombol{
 	background-color: rgb(0, 175, 102);
-	padding: 5px 10px;
-	border-radius: 10px;
+	padding: 5px 15px;
+	border-radius: 15px;
 }
 
 .tombol:hover{
@@ -71,25 +71,91 @@ main{
 
 /*Akhir Main*/
 
-/*konten*/
-.container-1{
-	border: 2px solid black;
-}
-.container-2{
-	border: 2px solid black;
-}
-.content-0{
-	background-image: url('assets/homepage.png');
+/*konten 0*/
+.container-0{
+	background-image: url(assets/cofeeHompage.jpg);
 	background-size: cover;
-	height: 300px;
+	background-position: center center;
+	height: 400px;
 	display: flex;
-	align-items: center;
 }
-
-.content-0 h2{
+.container-0 h2{
 	color: white;
+	font-size: xx-large;
+	font-weight: 700px;
+	margin-left: 30px;
+	margin-top: 300px;
 }
 
+/*konten 1*/
+.container-1{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+	padding: 0 120px;
+	margin: 15px 0;
+}
+
+.content-1 h2{
+	font-size: 3em;
+	color: rgb(34, 34, 34);
+}
+.tombol2{
+	background-color: rgb(0, 175, 102);
+	padding: 5px 10px;
+	border-radius: 15px;	
+	color: white;
+	font-size: 18px;
+    font-weight: 500;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+}
+.tombol2:hover{
+	background-color: rgb(255, 255, 255);
+	color: #00ff88;
+}
+
+/*Akhur dari konten 1*/
+
+/*Konten 2*/
+.container-2{
+	display: flex;
+	margin: 50px auto;
+	justify-content: space-around;
+
+}
+
+.card{
+	border-radius: 10px;
+	overflow: hidden;
+	background-color: white;
+	margin: 10px;
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+}
+.card .header{
+	height: 200px;
+	background-color: white;
+	display: flex;
+
+
+}
+.card .header img {
+
+	margin: auto;
+
+}
+.card .content{
+	text-align: center;
+	padding-bottom: 20px;
+}
+.card .content p{
+	text-align: justify;
+	padding: 15px;
+}
+/*AHIR KONTEN 2*/
 footer h1{
 	color: white;
 	text-align: center;
