@@ -10,30 +10,41 @@ body{
 }
 
 /*NavBAr*/
-.navbar{
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.navbar{    display: grid;
+    grid-template-columns: 2fr 1fr;
 	height: 65px;
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
+    align-items: center;
 }
 .logo{
-    border: 1px solid blue;
-}
-.navigation{
-    border: 1px solid green;
-
+    padding-left: 120px;
     
 }
-.navigation ul{
-    list-style: none;
+.logo span{
+    color: white;
+}
+.logo h1{
+    color: #00ffeb;
+}
+.navigation{
+
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
-    border: 1px solid orange;
+    list-style: none;
 
 }
+
 .navigation a{
+    display: block;
     text-decoration: none;
-    border: 1px solid red;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease 0s;
 }
+
+.navigation a:hover{
+    color: #1596ff;
+    text-shadow: 2px 2px #ffffff;
+}
+
