@@ -10,7 +10,8 @@ body{
 }
 
 /*NavBAr*/
-.navbar{    display: grid;
+.navbar{    
+    display: grid;
     grid-template-columns: 2fr 1fr;
 	height: 65px;
 	background: rgb(76,140,231);
@@ -49,5 +50,36 @@ body{
 }
 /*Akhir dari nav*/
 
+/*Awal Konten */
+.container h2{
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5em;
+    color: rgb(68, 68, 68);
 
 
+}
+.makanan{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    column-gap: 10px;
+    justify-items: center;
+    padding: 30px;
+}
+.card{
+
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    border-radius: 3px;
+    height: 250px;
+    width: 250px;
+}
+
+.card .header{
+
+    padding: 10px;
+}
+.card .detail{
+    text-align: center;
+}
