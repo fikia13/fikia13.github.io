@@ -73,7 +73,7 @@ main{
 
 /*konten 0*/
 .container-0{
-	background-image: url(assets/cofeeHompage.jpg);
+	background-image: url(assets/homepage.png);
 	background-size: cover;
 	background-position: center;
 	height: 400px;
