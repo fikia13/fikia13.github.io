@@ -64,18 +64,19 @@ body{
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
     justify-items: center;
     padding: 30px;
-    border: 1px solid red;
+
     grid-gap: 0px;
 
 }
 .card{
-    border: 1px solid blue;
+
     display: grid;
     justify-items: center;
     background-color: white;
     border-radius: 3px;
     height: 250px;
-    width: 220px;
+    width: 225px;
+    border: 1px solid rgb(179, 179, 179);
 }
 
 .card .header{
@@ -89,25 +90,25 @@ body{
 /*Order*/
 .order{
     display: grid;
-    border: 1px solid red;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
     justify-items: center;
     background-color: white;
     align-items: center;
     position: fixed;
     width: 100%;
-    top: 90%;
-    height: 70px;
+    top: 92%;
     row-gap: 5px;
+    height: 50px;
 
 }
 
 .jumlahItem{
-    border: 1px solid black;
+
     background-color: white;
 }
 .totalHarga{
-    border: 1px solid gold;
+
     background-color: white;
 
 }
@@ -125,3 +126,4 @@ body{
     width: 100%;
     height: 50px;
 }
+
