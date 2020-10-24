@@ -115,7 +115,8 @@ body{
 .tombolOrder{
     background-color: white;
 }
-.tombolOrder h4{
+.tombolOrder a{
+    text-decoration: none;
     background-color: green;
     padding: 7px 20px;
     border-radius: 15px;
