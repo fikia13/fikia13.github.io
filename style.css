@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+img{
+	width: 100%;
+}
 body{
     background-color:#F0F8FF;
     font-family: 'Montserrat';
@@ -14,7 +17,7 @@ body{
 /* nav */
 .navbar{    
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
 	height: 65px;
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
@@ -157,13 +160,3 @@ footer{
 	margin-top: 100px;
 }
 
-@media screen and (max-width: 576px) {
-
-	.content-1{
-		display: grid;
-		background-image: url(assets/homepagenew.png);
-		background-size: cover;
-		background-position: left;
-	
-	}
-}
