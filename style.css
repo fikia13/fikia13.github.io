@@ -1,49 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 *{
-	box-sizing: border-box;
-	margin:0;
+    margin: 0;
     padding: 0;
 }
-
-
 body{
-	background-color:#F0F8FF;
-	font-family: 'Montserrat';
+    background-color:#F0F8FF;
+    font-family: 'Montserrat';
+	font-size: 18px;
+	color: rgb(68, 68, 68);;
 }
-
 
 
 /* nav */
-nav{
-    display: flex;
-	justify-content: space-between;
+.navbar{    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 	height: 65px;
 	background: rgb(76,140,231);
-	background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
-	align-items: center;
-	padding: 0 120px;
-	
-}
+    background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
+    align-items: center;
+}	
 
-
-nav ul a{
-    font-size: 18px;
-    font-weight: 500;
-	color: white;
-	text-decoration: none;
-	transition: all 0.3s ease 0s;
-}
-
-nav ul a:hover{
-	color: rgb(0, 110, 255);
-}
-nav ul{
-	display: flex;
-	list-style: none;
-	width: 15%;
-	justify-content: space-between;
-	
-}
 .logo h1{
 	color: white;
 }
@@ -51,10 +28,29 @@ nav ul{
 .logo h1 span{
 	color: #00ffeb;
 }
+
+.logo{
+	padding-left: 120px;
+}
+
+.navigation{
+	display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+	list-style: none;
+	justify-items: center;
+}
+.navigation a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
 .tombol{
 	background-color: rgb(0, 175, 102);
 	padding: 5px 15px;
 	border-radius: 15px;
+	width: 100px;
 }
 
 .tombol:hover{
@@ -63,102 +59,84 @@ nav ul{
 }
 /* ----Akhir dari Nav ---*/
 
-/* Main */
-main{
-	display: flex;
-	flex-direction: column;
-}
-
-/*Akhir Main*/
-
-/*konten 0*/
-.container-0{
-	background-image: url(assets/homepage.png);
+/*konten pertama*/
+.content-1{
+	display: grid;
+	background-image: url(assets/homepagenew.png);
 	background-size: cover;
 	background-position: center;
 	height: 400px;
-	display: flex;
-}
-.container-0 h2{
-	color: white;
-	font-size: xx-large;
-	font-weight: 700px;
-	margin-left: 30px;
-	margin-top: 300px;
-}
+	align-items: flex-end;
 
-/*konten 1*/
-.container-1{
-	display: flex;
-	justify-content: space-between;
+}
+.content-1 .tulisan{
+	color: white;
+	padding: 20px;
+}
+/*Akhir dari konten pertama*/
+
+/*konten kedua*/
+.content-2{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
 	align-items: center;
-	height: 150px;
-	padding: 0 120px;
-	margin: 15px 0;
+	justify-items: center;
+	padding: 40px;
+	margin: 30px;
+	gap: 20px;
 }
-
-.content-1 h2{
-	font-size: 3em;
-	color: rgb(34, 34, 34);
+.sideleft{
+	display: grid;
+	gap: 10px;
 }
-.tombol2{
-	background-color: rgb(0, 175, 102);
-	padding: 5px 10px;
-	border-radius: 15px;	
-	color: white;
-	font-size: 18px;
-    font-weight: 500;
+.sideleft h2{
+	font-size: 3.5em;
+}
+.sideleft p{
+	font-weight: 500;
+}
+.sideright{
 	text-decoration: none;
-	transition: all 0.3s ease 0s;
+	color: white;
+	background-color: #00ff88;
+	padding: 10px;
+	border-radius: 25px;
 }
-.tombol2:hover{
-	background-color: rgb(255, 255, 255);
-	color: #00ff88;
-}
+/*akhir dari konten ke2*/
 
-/*Akhur dari konten 1*/
-
-/*Konten 2*/
-.container-2{
-	display: flex;
-	margin: 50px auto;
-	justify-content: space-around;
+/*Konten ketiga*/
+.content-3{
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+	justify-items: center;
 
 }
-
 .card{
-	border-radius: 10px;
-	overflow: hidden;
+	border-radius: 20px;
 	background-color: white;
 	margin: 10px;
 	width: 300px;
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	row-gap: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.452);
 }
 .card .header{
 	height: 200px;
-	background-color: white;
-	display: flex;
-
-
-}
-.card .header img {
-
-	margin: auto;
-
+	display: grid;
+	justify-content: center;
+	align-content: center;
 }
 .card .content{
 	text-align: center;
-	padding-bottom: 20px;
 }
-.card .content p{
+.content p{
 	text-align: justify;
-	padding: 15px;
+	padding: 10px;
 }
-.card:hover{
-	box-shadow: 2px 2px rgba(36, 36, 36, 0.459);
-}
-/*AHIR KONTEN 2*/
+
+
+
+/*footer bro*/
 footer h1{
 	color: white;
 	text-align: center;
@@ -170,6 +148,22 @@ footer h1 span{
 	color: #00ffeb;
 }
 footer{
+	display: grid;
 	background: rgb(57,225,194);
 	background: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
+	height: 65px;
+	justify-content: center;
+	align-content: center;
+	margin-top: 100px;
+}
+
+@media screen and (max-width: 576px) {
+
+	.content-1{
+		display: grid;
+		background-image: url(assets/homepagenew.png);
+		background-size: cover;
+		background-position: left;
+	
+	}
 }
