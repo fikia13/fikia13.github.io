@@ -175,7 +175,7 @@ footer{
 		background-position: right;
 	}
 }
-@media(max-width: 500px){
+@media(max-width: 576px){
 	.content-1{
 		background-image: url(assets/homepagenew.png);
 		background-size: cover;
