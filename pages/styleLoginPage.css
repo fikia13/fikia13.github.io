@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 *{
-	box-sizing: border-box;
-	margin:0;
+    margin: 0;
     padding: 0;
 }
 
-
 body{
-	background-color:#F0F8FF;
-	font-family: 'Montserrat';
+    background-color:#F0F8FF;
+    font-family: 'Montserrat';
+	font-size: 18px;
+	color: rgb(68, 68, 68);;
 }
 
-/* nav */
-nav{
-    display: flex;
-	justify-content: space-between;
+
+/*Navbar */
+.navbar{    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
 	height: 65px;
 	background: rgb(76,140,231);
-	background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
-	align-items: center;
-	padding: 0 120px;
+    background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
+    align-items: center;
 }
-
 .logo h1{
 	color: white;
 }
@@ -29,31 +28,35 @@ nav{
 .logo h1 span{
 	color: #00ffeb;
 }
+
+.logo{
+	padding-left: 120px;
+}
+
 .iconx{
-    font-size: xx-large;
-    font-weight: bold;
-    color: white;
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.2em;
     transition: all 0.3s ease 0s;
+
+
 }
 .iconx:hover{
-    color: rgb(255, 255, 255);
-    transform: rotate(90deg);
+    color: rgb(233, 70, 70);
+
 }
+
+
 /*Inti */
-.container{
-    height: 430px;
-    width: 100%;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+.konten{
+    display: grid;
     align-items: center;
-    color: rgb(68, 68, 68);
-}
-.content-1{
-    font-size: x-large;
-    margin-bottom: 20px;
+    justify-items: center;
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 10px;
+    padding: 153px;
 }
 
 .input1{
@@ -103,4 +106,39 @@ footer h1 span{
 footer{
 	background: rgb(57,225,194);
 	background: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
+}
+
+/*responsive */
+@media(max-width: 768px){
+}
+@media(max-width: 576px){
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    .logo{
+        padding-left: 0px;
+        font-size: 1.2em;
+    }
+    .konten{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        padding-top: 15px ;
+        padding-left: 0px;
+        padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .checkbox{
+        padding: 10px 10px;
+    
+    }
+    body{
+        height: 100%;
+    }
 }
