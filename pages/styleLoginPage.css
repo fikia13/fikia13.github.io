@@ -117,10 +117,13 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
+        height: 100px;
+		padding-top: 10px;
+		padding-bottom: 10px;
     }
     .logo{
         padding-left: 0px;
-        font-size: 1.2em;
+		font-size: 1.5em;
     }
     .konten{
         display: grid;
