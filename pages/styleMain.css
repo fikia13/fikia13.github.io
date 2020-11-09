@@ -95,6 +95,7 @@ body{
     height: 250px;
     width: 225px;
     border: 1px solid rgb(179, 179, 179);
+    transition: all 0.3s ease 0s;
 }
 
 .card .header{
@@ -103,6 +104,10 @@ body{
 }
 .card .detail{
     text-align: center;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 247, 255, 0.2), 0 6px 20px 0 rgba(86, 185, 250, 0.452);
+    border: 0px;
 }
 
 /*Order*/
@@ -139,6 +144,12 @@ body{
     padding: 7px 20px;
     border-radius: 15px;
     color: white;
+    transition: all 0.3s ease 0s;
+}
+.tombolOrder a:hover{
+    background-color: rgb(199, 233, 255);
+    color: #1596ff;
+
 }
 
 .fut{
@@ -164,8 +175,10 @@ body{
 		font-size: 1.5em;
 	}
     .navigation{
+        padding-left: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
+        align-items: center;
     }
 }
