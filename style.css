@@ -50,17 +50,17 @@ body{
 	border-radius: 15px;
 	width: 100px;
 	font-weight: 500;
+	
 }
-/*
 .tombol{
 	background-color: #00ff88;
-	padding: 5px 15px;
-	border-radius: 15px;
-	width: 100px;
-}
 
+}
 .tombol:hover{
 	background-color: white;
+	color: #00ff88;
+}
+.more:hover{
 	color: #00ffeb;
 }
 /* ----Akhir dari Nav ---*/
@@ -207,7 +207,11 @@ footer{
 		align-items: center;
 		justify-items: center;
 		text-align: center;
-		gap: 10px;
+		gap: 15px;
+	}
+	.content-3{
+		display: grid;
+		row-gap: 60px;
 	}
 
 }

@@ -17,10 +17,11 @@ body{
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
     align-items: center;
+
 }
 .logo{
     padding-left: 120px;
-    
+
 }
 .logo span{
     color: white;
@@ -29,24 +30,42 @@ body{
     color: #00ffeb;
 }
 .navigation{
-
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
     list-style: none;
+    align-items: center;
 
 }
 
 .navigation a{
-    display: block;
+    display: grid;
     text-decoration: none;
     color: white;
     text-align: center;
     transition: all 0.3s ease 0s;
+
 }
 
+.navigation .tiga{
+
+    background-color: white;
+    color:  #1596ff;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    border-radius: 50px;
+}
 .navigation a:hover{
-    color: #1596ff;
-    text-shadow: 2px 2px #ffffff;
+    color: #97f8ff;
+
+    
+}
+
+.navigation .tiga:hover{
+    background-color: #1596ff;
+    text-decoration: none;
+    color: white;
 }
 /*Akhir dari nav*/
 
