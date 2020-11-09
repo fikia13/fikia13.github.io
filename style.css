@@ -108,10 +108,12 @@ body{
 	background-color: #00ff88;
 	padding: 10px;
 	border-radius: 25px;
+	transition: all 0.3s ease 0s;
 }
 .sideright:hover{
 	background-color: white;
 	color: #00ff88;
+	box-shadow: 0 4px 8px 0 rgba(0, 247, 255, 0.2), 0 6px 20px 0 rgba(86, 185, 250, 0.452);
 }
 /*akhir dari konten ke2*/
 
@@ -130,6 +132,7 @@ body{
 	display: grid;
 	row-gap: 10px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.452);
+	transition: all 0.3s ease 0s;
 }
 .card .header{
 	height: 200px;
@@ -145,7 +148,9 @@ body{
 	padding: 10px;
 }
 
-
+.card:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 247, 255, 0.2), 0 6px 20px 0 rgba(86, 185, 250, 0.452);
+}
 
 /*footer bro*/
 footer h1{
