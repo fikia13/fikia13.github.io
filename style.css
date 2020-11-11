@@ -19,7 +19,8 @@ body{
 	height: 65px;
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
-    align-items: center;
+	align-items: center;
+
 }	
 
 .logo h1{
@@ -67,12 +68,14 @@ body{
 
 /*konten pertama*/
 .content-1{
+
 	display: grid;
 	background-image: url(assets/homepagenew.png);
 	background-size: cover;
 	background-position: center;
 	height: 400px;
 	align-items: flex-end;
+
 
 }
 .content-1 .tulisan{
