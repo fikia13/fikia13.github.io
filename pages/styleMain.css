@@ -17,7 +17,6 @@ body{
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
     align-items: center;
-
 }
 .logo{
     padding-left: 120px;
@@ -102,6 +101,7 @@ body{
 .card .header{
 
     padding: 10px;
+    transition: transform .2s;
 }
 .card .detail{
     text-align: center;
@@ -109,6 +109,10 @@ body{
 .card:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 247, 255, 0.2), 0 6px 20px 0 rgba(86, 185, 250, 0.452);
     border: 0px;
+}
+
+.card .header:hover{
+    transform: scale(1.4);
 }
 
 /*Order*/
