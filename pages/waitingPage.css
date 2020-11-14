@@ -137,11 +137,13 @@ header{
 }
 .navigasi .tombol{
 	padding: 10px 14px;
-	border-radius: 20px;
+	border-radius: 50px;
+	background-color: white;
+	color: #97f8ff;
 }
 .navigasi .tombol:hover{
-	color: var(--tombolHijau);
-	background-color: white;
+	color: white;
+	background-color: #97f8ff;
 }
 /* -- Navigasi -- */
 
