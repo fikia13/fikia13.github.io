@@ -41,8 +41,8 @@ for (let i = 0; i < jumlahs.length; i++){
     });
     minus[i].addEventListener('click', function(){
         if (objects[i].jumlah === 0 ){
-            totalItem = 0;
-            jumlahItem.innerHTML = String(totalItem)
+            let var0 = 0;
+            display[i].innerHTML = String(var0)
         } else{
             kurangiCard(i,1);
             kurang(1);
