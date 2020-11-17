@@ -4,7 +4,8 @@ const jumlahs = document.querySelectorAll('.operand h4:nth-child(3)')
 const minus = document.querySelectorAll('.operand h4:nth-child(1)');
 var display = document.querySelectorAll('.operand h4:nth-child(2)');
 var jumlahItem = document.querySelector('.jumlahItem span');
-var jumlahHarga = document.querySelector('.totalHarga span')
+var jumlahHarga = document.querySelector('.totalHarga span');
+var order = document.querySelector('.tombolOrder a');
 let totalItem = 0;
 let dispalyCard = 0;
 let totalHarga = 0;
@@ -50,6 +51,14 @@ for (let i = 0; i < jumlahs.length; i++){
         }
     });
 };
+
+order.addEventListener('click', function(){
+    if(totalItem == 0){
+        alert("Kamu masih belum memesan :)");
+        order.setAttribute('href','#')
+    }
+})
+
 /*
 for (let i = 0; i < minus.length; i++){
     minus[i].addEventListener('click',function(){
