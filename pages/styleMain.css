@@ -115,6 +115,11 @@ body{
     transform: scale(1.4);
 }
 
+.detail .operand{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 /*Order*/
 .order{
     display: grid;
@@ -160,7 +165,27 @@ body{
     width: 100%;
     height: 50px;
 }
+.operand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 
+}
+.operand h4:nth-child(3){
+    font-size: 1.5em;
+    color: rgb(80, 80, 80);
+}
+.operand h4:nth-child(1){
+    font-size: 1.5em;
+    color: rgb(80, 80, 80);
+}
+.operand h4:nth-child(3):hover{
+    color: rgb(0, 250, 0);
+}
+.operand h4:nth-child(1):hover{
+    color: rgb(255, 0, 0);
+}
 @media(max-width: 576px){
     .navbar{
         display: grid;
