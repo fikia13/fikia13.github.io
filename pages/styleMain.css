@@ -210,4 +210,10 @@ body{
         grid-template-rows: 1fr;
         align-items: center;
     }
+    .makanan{
+        row-gap: 20px;
+    }
+    .operand h4{
+        padding: 0px 10px;
+    }
 }
