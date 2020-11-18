@@ -56,6 +56,8 @@ order.addEventListener('click', function(){
     if(totalItem == 0){
         alert("Kamu masih belum memesan :)");
         order.setAttribute('href','#')
+    }else{
+        order.setAttribute('href','confirmPage.html')
     }
 })
 
