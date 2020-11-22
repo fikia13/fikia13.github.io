@@ -1,195 +1,88 @@
-/*CSS Reset*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
-:root{
-	/*Variabel Font*/
-	--fontDasar: Montserrat,sans-serif;
-
-	/*Variabel Warna*/
-	--warnaUbi: #00ffeb;
-	--warnaDasar: #F0F8FF;
-	--warnaNav: rgb(76,140,231);
-	--warnaNav: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
-	--tombolHijau : rgb(0, 175, 102);
-	--warnaGelap: rgb(34, 34, 34);
-	--warnaFooter: rgb(57,225,194);
-	--warnaFooter: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
-	--bayangan : 0 1px 5px rgba(104,104,104,0.8);
-}
-
-/*-- Settingan Dasar --*/
-html{
-	box-sizing: border-box;
-	font-family: var(--fontDasar);
-	color: var(--warnaGelap);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
-	background-color: var(--warnaDasar);
+    background-color:#F0F8FF;
+    font-family: 'Montserrat';
+	font-size: 18px;
+	color: rgb(68, 68, 68);;
 }
 
-.tombol{
-	background-color: var(--tombolHijau);
-	color: white;
-	text-decoration: none;
-	padding: 0.6rem 1.3rem;
-	border:0;
+
+/*Navbar*/
+.navbar{    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+	height: 65px;
+	background: rgb(76,140,231);
+    background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
+    align-items: center;
+}
+.logo{
+    padding-left: 120px;
+
+}
+.logo span{
+    color: white;
+}
+.logo h1{
+    color: #00ffeb;
+}
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    list-style: none;
+    align-items: center;
+
 }
 
-.pembungkus{
-	display: grid;
-	grid-gap: 20px;
-}
-/*-- Settingan Dasar --*/
-
-/* -- Navigasi --*/
-header{
-	background:var(--warnaNav);
-}
-.navigasi{
-	width: 80%;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	align-items: center;
-	padding: 1.2rem;
-}
-.navigasi ul{
-	display: grid;
-	grid-gap: 0px;
-	padding: 0;
-	list-style: none;
-	grid-template-columns: repeat(3,1fr);
-	align-items: center;
+.navigation a{
+    display: grid;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
 }
 
-.navigasi li a{
-	display: inline-block;
-	padding: 0.3rem;
-	text-decoration: none;
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
-	font-size: 1.1rem;
+.navigation .tiga{
+
+    background-color: white;
+    color:  #1596ff;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    border-radius: 50px;
+}
+.navigation a:hover{
+    color: #97f8ff;
 }
 
-.navigasi li a:hover{;
-	color: var(--tombolHijau);
-}
-
-.namaCafe h1{
-	font-size: 1.8rem;
-	color: white;
-}
-
-.namaCafe span{
-	color: var(--warnaUbi);
-}
-.navigasi .tombol{
-	padding: 10px 14px;
-	border-radius: 50px;
-	color: #1596ff;
-	background-color: white;
-}
-.navigasi .tombol:hover{
-	color: white;
-	background-color: #1596ff;
-}
-/* -- Navigasi -- */
-
-
-/* -- Konten -- */
+/*Konten*/
 .konten{
-	display: grid;
-	grid-template-rows: auto auto;
-	font-size: 1.3rem;
-	grid-gap: 30px;
+
+    display: grid;
+    align-items: center;
 
 }
-
 .box{
-	display: grid;
-	grid-template-rows: "salam rincian total";
-	background-color: white;
-	align-items:  center;
-	width: 80%;
-	margin:0 auto;
-	padding: 50px;
-	border-radius: 20px;
-	box-shadow: var(--bayangan);
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    margin: 30px 10px;
+    display: grid;
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
+.tombolConfirm{
 
-.salam h1{
-	font-size: 4rem;
 }
+/*akhir dari konten*/
 
-.salam h2{
-	font-size: 2rem;
-}
-
-.rincian,.total{
-	font-size: 2rem;
-}
-
-.makanan,.minuman{
-	padding-left: 40px;
-}
-
-.total{
-	display : grid;
-	grid-template-columns: 1fr 0.5fr;
-}
-
+/*tombol*/
 .tombolConfirm{
 	margin: auto;
 	display: grid;
@@ -197,6 +90,7 @@ header{
 	grid-template-columns: repeat(2,1fr);
 	grid-gap: 40px;
 	justify-items: space-around;
+    border: 1px solid red;
 }
 
 .batal,.setuju{
@@ -218,36 +112,29 @@ header{
 }
 .setuju a:hover{
 	background-color: white;
-	color: var(--tombolHijau);
+	color: lightgreen;
 }
 
 .setuju a{
 	text-decoration: none;
-	background-color: var(--tombolHijau);
+	background-color: lightgreen;
 	padding: 0.3rem 1.4rem;
 	color: white;
 	border-radius: 20px;
 }
-/* -- Konten -- */
-
-
-/* -- Footer --*/
+/*Footer*/
+footer h1 span{
+	color: #ffffff;
+}
 footer{
-	background: var(--warnaFooter);
-	text-align: center;
-	padding: 1.3rem;
-	margin-top: 20px;
+	display: grid;
+	background: rgb(57,225,194);
+	background: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
+	height: 65px;
+	justify-content: center;
+	align-content: center;
+	margin-top: 50px;
 }
-
-footer h2{
-	color: white;
-}
-
-footer span{
-	color: var(--warnaUbi);
-}
-/* -- Footer --*/
-
 
 /* -- Pop Up -- */
 .popup{
@@ -320,3 +207,81 @@ img{
 }
 
 /* -- Pop Up -- */
+
+/*Responsive*/
+@media(max-width: 576px){
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        height: 100px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+    }
+    .navigation{
+        padding-left: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    .logo{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: 0px;
+		font-size: 1.5em;
+    }
+    .tombolConfirm{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .box{
+        transform: scale(0.9);
+        margin-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        
+    }
+    .konten{
+
+    }
+    .salam h1{
+        font-size: 1rem;
+    }
+    
+    .salam h2{
+        font-size: 1rem;
+    }
+    
+    .rincian,.total{
+        font-size: 1rem;
+    }
+    
+    .tombolConfirm{
+        transform: scale(0.7);
+        margin-top: 0px;
+        width: 100%;
+    }
+    .setuju{
+        order: 1;
+        margin: 0 auto;
+    }
+
+    .batal{
+        order: 2;
+    }
+
+    .kontenPopup{
+        transform: scale(0.5);
+        padding: 100px;
+        text-align: center;
+    }
+
+}
