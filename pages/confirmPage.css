@@ -90,7 +90,6 @@ body{
 	grid-template-columns: repeat(2,1fr);
 	grid-gap: 40px;
 	justify-items: space-around;
-    border: 1px solid red;
 }
 
 .batal,.setuju{
@@ -276,6 +275,7 @@ img{
 
     .batal{
         order: 2;
+	margin-top: 20px;
     }
 
     .kontenPopup{
