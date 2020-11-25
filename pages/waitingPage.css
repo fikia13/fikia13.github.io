@@ -1,213 +1,103 @@
-/*CSS Reset*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
-
-:root{
-	/*Variabel Font*/
-	--fontDasar: Montserrat,sans-serif;
-
-	/*Variabel Warna*/
-	--warnaUbi: #00ffeb;
-	--warnaDasar: #F0F8FF;
-	--warnaNav: rgb(76,140,231);
-	--warnaNav: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
-	--tombolHijau : rgb(0, 175, 102);
-	--warnaGelap: rgb(34, 34, 34);
-	--warnaFooter: rgb(57,225,194);
-	--warnaFooter: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
-	--bayangan : 0 1px 5px rgba(104,104,104,0.8);
-}
-
-/*-- Settingan Dasar --*/
-html{
-	box-sizing: border-box;
-	font-family: var(--fontDasar);
-	color: var(--warnaGelap);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
 }
 
 body{
-	background-color: var(--warnaDasar);
+    background-color:#F0F8FF;
+    font-family: 'Montserrat';
+	font-size: 18px;
+	color: rgb(68, 68, 68);;
 }
 
-.tombol{
-	background-color: var(--tombolHijau);
-	color: white;
-	text-decoration: none;
-	padding: 0.6rem 1.3rem;
-	border:0;
+/*Navbar*/
+.navbar{    
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+	height: 65px;
+	background: rgb(76,140,231);
+    background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
+    align-items: center;
 }
+.logo{
+    padding-left: 120px;
 
-.pembungkus{
-	display: grid;
-	grid-gap: 20px;
 }
-/*-- Settingan Dasar --*/
-
-/* -- Navigasi --*/
-header{
-	background:var(--warnaNav);
+.logo span{
+    color: white;
 }
-.navigasi{
-	width: 80%;
-	margin: auto;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	align-items: center;
-	padding: 1.2rem;
+.logo h1{
+    color: #00ffeb;
 }
-.navigasi ul{
-	display: grid;
-	grid-gap: 0px;
-	padding: 0;
-	list-style: none;
-	grid-template-columns: repeat(3,1fr);
-	align-items: center;
-}
-
-.navigasi li a{
-	display: inline-block;
-	padding: 0.3rem;
-	text-decoration: none;
-	text-align: center;
-	color: white;
-	text-transform: uppercase;
-	font-size: 1.1rem;
-}
-
-.navigasi li a:hover{;
-	color: var(--tombolHijau);
-}
-
-.namaCafe h1{
-	font-size: 1.8rem;
-	color: white;
-}
-
-.namaCafe span{
-	color: var(--warnaUbi);
-}
-.navigasi .tombol{
-	padding: 10px 14px;
-	border-radius: 50px;
-	background-color: white;
-	color: #1596ff;
-}
-.navigasi .tombol:hover{
-	color: white;
-	background-color: #1596ff;
-}
-/* -- Navigasi -- */
-
-
-/* -- Konten -- */
-.konten{
-	display: grid;
-	grid-row-gap: 20px;
-	grid-template-rows: auto 1fr auto;
-	font-size: 1.3rem;
+.navigation{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    list-style: none;
+    align-items: center;
 
 }
 
-.atas,.bawah,.tanda{
-	display: flex;
-	flex-direction: column;
-	background-color: white;
-	align-items:  center;
-	width: 80%;
-	margin:0 auto;
-	padding: 20px;
-	border-radius: 20px;
-	box-shadow: var(--bayangan);
-}
-.atas h2,.bawah h2{
-	font-size: 2.5rem;
-}
-
-.atas{
-	display:grid;
-	grid-template-areas: "logo dataCust";
-	grid-template-columns: 30% 70%;
-	grid-gap: 20px;
-
-}
-.atas .logo{
-	background: var(--warnaNav);
-	border-radius: 50%;
-	display: grid;
-	height: 200px;
-	width: 200px;
-	margin: auto;
-}
-.atas .logo .inisial{
-	display: block;
-	margin: 40px;
+.navigation a{
+    display: grid;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
 
 }
 
-.atas .logo h1{
-	font-size: 8rem;
-	text-align: center;
-	color: white;
+.navigation .tiga{
+    background-color: white;
+    color:  #1596ff;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    border-radius: 50px;
+}
+.navigation a:hover{
+    color: #97f8ff;
+
+    
 }
 
-.namaCust,.noMeja,.tombolOut{
-	margin: 10px;
+.navigation .tiga:hover{
+    background-color: #1596ff;
+    text-decoration: none;
+    color: white;
 }
 
+
+/*Konten */
+.konten-atas{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    width: 70%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.logoUser{
+    background-color: #00ffeb;
+    border-radius: 50%;
+    padding: 10px 35px 10px 35px;
+    font-size: 3rem;
+    color: white;
+
+}
 .dataCust{
-	display: flex;
-	flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
-
 .tombolOut{
 	margin-top:20px;
 }
@@ -223,31 +113,45 @@ header{
 	background-color: var(--warnaDasar);
 	color: red;
 }
-
-
+/*Konten Bawah*/
+.konten-bawah{
+    display: grid;
+    background-color: white;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+.saya{
+    text-align: center;
+}
 
 .pesanan{
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
 }
-
-.Makanan,.Minuman{
-	margin: 10px
+.daftar-pesanan{
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 70%;
 }
 .info-pesanan{
-	grid-template-rows: repeat(2,1fr);
-	grid-gap: 100px;
-}
-.dot-status{
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-gap: 20px;
-	margin-top: 30px;
-	justify-items:center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
+.dot-status{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
 .card-status{
-	height: 100px;
+    height: 100px;
+    display: grid;
+    justify-content: space-around;
 
 }
 .card-status .nomer{
@@ -265,7 +169,7 @@ header{
 	margin-top: 10px;
 }
 .nomer1{
-	background-color: var(--tombolHijau);
+	background-color: greenyellow;
 }
 .nomer2{
 	background-color: yellow;
@@ -279,100 +183,108 @@ header{
 	background-color: rgb(76,140,231);
 	color: white;
 	padding: 0.3rem 1.1rem;
-	font-size: 2rem;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+
 }
 
 .tanda{
 	background-color: yellow;
 }
-/* -- Konten -- */
 
+/*Tanda*/
+.tanda{
+    display: grid;
+    background-color: white;
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
 
-/* -- Footer --*/
+/*foot*/
+footer h1{
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
+footer h1 span{
+	color: #00ffeb;
+}
 footer{
-	background: var(--warnaFooter);
-	text-align: center;
-	padding: 1.3rem;
+	display: grid;
+	background: rgb(57,225,194);
+	background: linear-gradient(90deg, rgba(57,225,194,1) 0%, rgba(76,140,231,1) 100%);
+	height: 65px;
+	justify-content: center;
+	align-content: center;
+	margin-top: 100px;
 }
 
-footer h2{
-	color: white;
+
+@media(max-width: 576px){
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        height: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navigation{
+        padding-left: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        font-size: 1.5em;
+    }
+    .konten-atas{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+    }
+    .pesanan{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .harga{
+        display: grid;
+        font-size: 0.7em;
+        height:fit-content;
+        justify-self: center;
+    }
+    .info-pesanan{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+    }
+    .dot-status{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 10px;
+    }
+    .pesanan{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+    }
+    .tanda{
+        font-size: 0.8em;
+    }
+
 }
-
-footer span{
-	color: var(--warnaUbi);
-}
-/* -- Footer --*/
-
-
-/* -- Pop Up -- */
-.popup{
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background:rgba(0,0,0,0.6);
-	display: none;
-}
-
-img{
-	display: block;
-	height: 200px;
-	margin: 0 auto;
-}
-
-.kontenPopup{
-	width: 50%;
-	height: 70%;
-	margin: 60px auto;
-	position: relative;
-	border: 5px solid red;
-	border-radius: 20px;
-	background-color: white;
-	text-align: center;
-	padding-top: 30px;
-
-}
-
-.kontenPopup h1{
-	font-size: 3rem;
-	padding-bottom: 10px;
-
-}
-
-.tombolOke{
-	display: inline-block;
-	background-color: green;
-	padding: 0.6rem 1.6rem;
-	text-decoration: none;
-	color: white;
-	margin-top: 20px;
-	border-radius: 20px;
-}
-
-.tombolOke:hover{
-	background-color: skyblue;
-	color:white;
-}
-
-.tutup{
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	border-radius: 50%;
-	border: 3px solid red;
-	background-color: red;
-	color: white;
-	text-decoration: none;
-	line-height: 0;
-	padding: 9px 0 11px;
-	width: 20px;
-	text-align: center;
-}
-
-.popup:Target{
-	display: block;
-}
-
-/* -- Pop Up -- */
