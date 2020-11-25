@@ -1,115 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Pesanan Saya</title>
-	<link rel="stylesheet" type="text/css" href="waitingPage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wait2.css">
+    <title>Pesanan Saya</title>
 </head>
 <body>
-	<div class="pembungkus">
-		<!-- Header -->
-		<header>
-			<nav class="navigasi">
-				<div class="namaCafe">
-					<h1><span>Ubi</span>Cofee</h1>
-				</div>
-				<ul>
-					<li><a href="mainPage.html">Dasboard</a></li>
-					<li><a href="about.html">More</a></li>
-					<li><a class="tombol" href="#">F</a></li>
-				</ul>
-			</nav>
-		</header>
-		<!-- Header -->
+    <div class="conatainer">
+        <nav class="navbar">
+            <div class="logo">
+                <h1><span>Ubi</span>Cofee</h1>
+            </div>
+            <ul class="navigation">
+                <li><a class="more" href="pages/about.html">About Us</a></li>
+                <li><a class="tombol" href="pages/loginPage.html">LogIn</a></li>
+            </ul>
+        </nav>
 
-		<!-- Konten -->
-		<section class="konten">
-			<div class="konten atas">
-				<div class="logo">
-					<div class="inisial">
-						<h1>F</h1>
-					</div>
-				</div>
-				<div class="dataCust">
-					<div class="namaCust">
-						<h2 class="label">Nama : Fiki Aviantono</h2>
-					</div>
-					<div class="noMeja">
-						<h2 class="label">No.Meja : IDMEJA#007</h2>
-					</div>
-					<div class="tombolOut">
-						<a href="#open-popup">Log Out</a>
-					</div>
-				</div>
-			</div>
-			<div class="konten bawah">
-				<h2>Pesanan Saya</h2>
-				<div class="pesanan">
-					<div class="daftar-pesanan">
-						<div class="Makanan">
-							<h3>Makanan</h3>
-							<h4>- Krabby Patty x2</h4>
-							<h4>- Kebab Sweat x2</h4>
-						</div>
-						<div class="Minuman">
-							<h3>Minuman</h3>
-							<h4>- Es Kacang Ijo x2</h4>
-						</div>
-					</div>
-					<div class="info-pesanan">
-						<div class="harga">
-							<h1>Rp. 44.000</h1>
-						</div>
-						<div class="dot-status">
-							<div class="card-status">
-								<div class="nomer nomer1">
-									<h2>1</h2>
-								</div>
-								<h3>Pending</h3>
-							</div>
-							<div class="card-status">
-								<div class="nomer nomer2">
-									<h2>2</h2>
-								</div>
-								<h3>Di Proses</h3>
-							</div>
-							<div class="card-status">
-								<div class="nomer nomer3">
-									<h2>3</h2>
-								</div>
-								<h3>Selesai</h3>
-							</div>
-						</div>
-					</div>
-				</div>
+        <div class="konten-atas">
+            <div class="logoUser">
+                <div class="inisial">
+                    <h1>F</h1>
+                </div>
+            </div>
+            <div class="dataCust">
+                <div class="namaCust">
+                    <h2>Nama :</h2>
+                    <h2>Fiki Aviantono</h2>
+                </div>
+                <div class="noMeja">
+                    <h2>No.Meja :</h2>
+                    <h2>IDMEJA#007</h2>
+                </div>
+                <div class="tombolOut">
+                    <a href="#open-popup">Log Out</a>
+                </div>
+            </div>
+        </div>
+        <div class="konten-bawah">
+            <div class="saya">
+                <h2 >Pesanan Saya</h2>
+            </div>
+            <div class="pesanan">
+                <div class="daftar-pesanan">
+                    <div class="Makanan">
+                        <h3>Makanan</h3>
+                        <h4>- Krabby Patty x2</h4>
+                        <h4>- Kebab Sweat x2</h4>
+                    </div>
+                    <div class="Minuman">
+                        <h3>Minuman</h3>
+                        <h4>- Es Kacang Ijo x2</h4>
+                    </div>
+                </div>
+                <div class="info-pesanan">
+                    <div class="harga">
+                        <h1>Rp. 44.000</h1>
+                    </div>
+                    <div class="dot-status">
+                        <div class="card-status">
+                            <div class="nomer nomer1">
+                                <h2>1</h2>
+                            </div>
+                            <h3>Pending</h3>
+                        </div>
+                        <div class="card-status">
+                            <div class="nomer nomer2">
+                                <h2>2</h2>
+                            </div>
+                            <h3>Di Proses</h3>
+                        </div>
+                        <div class="card-status">
+                            <div class="nomer nomer3">
+                                <h2>3</h2>
+                            </div>
+                            <h3>Selesai</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tanda">
+            <h2>Pesanan Anda Sedang Di Proses</h2>
+        </div>
+    </div>
 
-			</div>
-
-			<div class="tanda">
-				<h2>Pesanan Anda Sedang Di Proses</h2>
-			</div>
-		</section>
-		<!-- Konten -->
-
-
-		<!-- Footer -->
-		<footer>
-			<h2><span>Ubi</span>Cofee</h2>
-		</footer>
-		<!-- Footer -->
-	</div>
-
-		<!--Pop Up -->
-	<div class="popup" id="open-popup">
-		<div class="kontenPopup">
-			<h1>Hallo,</h1>
-			<h1>Fiki Aviantono</h1>
-			<p>Anda harus menyelesaikan pesanan anda terlebih dahulu, agar bisa log out.</p>
-			<p>Terima Kasih kak <b>Fiki Aviantono.</b></p>
-			<img src="../assets/alert.png">
-			<a class="tombolOke" href="waitingPage.html">Oke</a>
-			<a class="tutup" href="#">x</a>
-		</div>
-	</div>
-		<!--Pop Up -->
+    <footer>
+        <h1><span>Ubi</span>Cofee</h1>
+    </footer>
 </body>
 </html>
