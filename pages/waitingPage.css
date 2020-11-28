@@ -103,16 +103,13 @@ body{
 }
 
 .tombolOut a{
-	background-color: red;
+	background-color: rgb(218, 0, 0);
 	color: white;
 	text-decoration: none;
 	padding: 0.4rem 1.1rem;
 	border-radius: 20px;
 }
-.tombolOut a:hover{
-	background-color: var(--warnaDasar);
-	color: red;
-}
+
 /*Konten Bawah*/
 .konten-bawah{
     display: grid;
@@ -169,10 +166,10 @@ body{
 	margin-top: 10px;
 }
 .nomer1{
-	background-color: greenyellow;
+	background-color: yellow;
 }
 .nomer2{
-	background-color: yellow;
+	background-color: grey;
 }
 .nomer3{
 	background-color: grey;
