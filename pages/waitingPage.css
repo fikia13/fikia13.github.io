@@ -311,6 +311,7 @@ footer{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         align-items: center;
+        column-gap: 30px;
     }
     .logo{
         display: flex;
