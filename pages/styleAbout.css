@@ -199,4 +199,8 @@ footer{
     form{
         justify-content: center;
     }
+    input{
+        border: 1px solid red;
+        
+    }
 }

@@ -356,11 +356,13 @@ footer{
         font-size: 0.8em;
     }
 
-    .kontenPopup{
-        transform: scale(0.5);
-        padding: 100px;
-        text-align: center;
+    .kontenPopup h1{
+        font-size: large;
     }
-
+    .kontenPopup{
+        width: 80%;
+        height: 70%;
+        font-size: large;
+    }
 
 }

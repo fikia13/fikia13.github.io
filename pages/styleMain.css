@@ -209,7 +209,9 @@ body{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         align-items: center;
+        column-gap: 15px;
     }
+
     .makanan{
         row-gap: 20px;
     }
