@@ -176,11 +176,11 @@ footer{
         height: 100px;
         padding-top: 10px;
         padding-bottom: 10px;
+        
     }
     .navigation{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        column-gap: 40px;
         
     }
 
@@ -199,13 +199,12 @@ footer{
     form{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 80%;
         align-self: center;
     }
     .konten-bawah{
         display: grid;
-        align-items: center;
-        text-align: center;
+        justify-content: center;
     }
 
 }
