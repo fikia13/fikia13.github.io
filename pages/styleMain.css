@@ -17,6 +17,8 @@ body{
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 .logo{
     padding-left: 120px;
@@ -69,6 +71,9 @@ body{
 }
 /*Akhir dari nav*/
 
+.tambah{
+    height: 70px;
+}
 /*Awal Konten */
 .container h2{
     text-align: center;
@@ -218,5 +223,9 @@ body{
     }
     .operand h4{
         padding: 0px 10px;
+    }
+    .tambah{
+        height: 100px;
+        width: 100%;
     }
 }

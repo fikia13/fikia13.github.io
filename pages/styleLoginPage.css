@@ -15,7 +15,7 @@ body{
 /*Navbar */
 .navbar{    
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 8fr 1fr;
 	height: 65px;
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
@@ -51,7 +51,10 @@ body{
 
 
 /*Inti */
-
+.tambah{
+    height: 60px;
+    width: 100%;
+}
 .konten{
     display: grid;
     align-items: center;
@@ -147,5 +150,9 @@ footer{
     }
     body{
         height: 100%;
+    }
+    .tambah{
+        height: 90px;
+        width: 100%;
     }
 }

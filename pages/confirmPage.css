@@ -20,6 +20,8 @@ body{
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 .logo{
     padding-left: 120px;
@@ -62,6 +64,11 @@ body{
     color: #97f8ff;
 }
 
+
+.tambah{
+    height: 60px;
+    width: 100%;
+}
 /*Konten*/
 .konten{
 
@@ -122,8 +129,15 @@ body{
 	border-radius: 20px;
 }
 /*Footer*/
+footer h1{
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
 footer h1 span{
-	color: #ffffff;
+	color: #00ffeb;
 }
 footer{
 	display: grid;
@@ -132,9 +146,9 @@ footer{
 	height: 65px;
 	justify-content: center;
 	align-content: center;
-	margin-top: 50px;
+	margin-top: 100px;
+	width: 100%;
 }
-
 /* -- Pop Up -- */
 .popup{
 	position: fixed;
@@ -213,17 +227,22 @@ img{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        height: 100px;
+        height: 80px;
 		padding-top: 10px;
-		padding-bottom: 10px;
+        padding-bottom: 10px;
+        z-index: 1;
+    }
+    .tambah{
+        height: 100px;
+        width: 100%;
     }
     .navigation{
         padding-left: 60px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         align-items: center;
-        column-gap: 30px;
+        column-gap: 90px;
         
     }
     .logo{
@@ -231,7 +250,7 @@ img{
 		justify-content: center;
 		align-items: center;
 		padding-left: 0px;
-		font-size: 1.5em;
+		font-size: 1.3em;
     }
     .tombolConfirm{
         display: flex;
@@ -283,9 +302,12 @@ img{
         font-size: large;
     }
     .kontenPopup{
+        margin-top: 110px;
         width: 80%;
         height: 70%;
         font-size: large;
+
+        
     }
 
 }
