@@ -20,6 +20,8 @@ body{
 	background: rgb(76,140,231);
     background: linear-gradient(90deg, rgba(76,140,231,1) 0%, rgba(57,225,194,1) 100%);
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 .logo h1{
 	color: white;
@@ -57,6 +59,7 @@ body{
     grid-template-rows: repeat(5,1fr);
     row-gap: 10px;
     padding: 153px;
+    
 }
 
 .input1{
@@ -117,13 +120,14 @@ footer{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
         justify-items: center;
-        height: 100px;
+        height: 80px;
 		padding-top: 10px;
-		padding-bottom: 10px;
+        padding-bottom: 10px;
+        
     }
     .logo{
         padding-left: 0px;
-		font-size: 1.5em;
+		font-size: 1.3em;
     }
     .konten{
         display: grid;
